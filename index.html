@@ -1,18 +1,144 @@
+</html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
+  <title>Desafio HTML - Formação Web Developer Dio</title>
 
-  <!-- HTML -->
+  <!-- CSS -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
 
+    header {
+      width: 1440px;
+      height: 1024px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="/src/styles/style.css">
+    main {
+      width: 1440px;
+      height: 1024px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #page-title {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #363638;
+      color: #FFFFFF;
+      padding: 20px;
+    }
+
+    #img {
+      width: 150px;
+      height: 150px;
+      background-image: url(/src/image/62ed1f1d-8d76-4bbc-905f-e73d20cb82f5.webp);
+      background-size: cover;
+      margin: 20px;
+    }
+
+    #title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 20px;
+    }
+
+    #title-challenge {
+      font-size: 36px;
+    }
+
+    #subtitle-training {
+      font-size: 24px;
+    }
+
+    #navbar {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      background-color: white;
+      color: #363638;
+      padding: 20px;
+    }
+
+    #navbar-main {
+      width: 25%;
+      border: 2px solid orangered;
+      border-radius: 15px;
+      margin: 20px;
+      padding: 20px;
+      text-align: center;
+      background-color: whitesmoke;
+    }
+
+    .title-navbar {
+      font-size: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 15px 15px 0 0;
+      background-color: #363638;
+      color: #FFFFFF;
+    }
+
+    a {
+      color: #363638;
+      text-decoration: none;
+    }
+
+    .title-option {
+      color: #777777;
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    #sobre-pagina {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2px;
+      color: orangered;
+    }
+
+    #sobre-pagina div:last-child {
+      color: black;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,23 +151,31 @@
       </div>
     </section>
 
+    <section id="sobre-pagina">
+      <div>Sobre a página</div>
+      <div>
+        Essa página foi desenvolvida no desafio do bootcamp Formação html web developer pela dio.me
+      </div>
+    </section>
+  </header>
+
+  <main>
     <section id="navbar">
-      <section id="navbar-left">
-        <div class="title-navbar">Entendendo Comunicação Client x Server</div>
+      <section id="navbar-main">
         <section>
-          <div>História da web</div>
+          <div class="title-option"><a href="#">História da web</a></div>
           <ul>
             <li>
-              <div><a>Primeiros computadores</a></div>
+              <div><a href="#">Primeiros computadores</a></div>
             </li>
             <li>
-              <div><a>Como surgiu a internet?</a></div>
+              <div><a href="#">Como surgiu a internet?</a></div>
             </li>
           </ul>
         </section>
 
         <section>
-          <div>O que são clientes?</div>
+          <div class="title-option"><a href="#">O que são clientes?</a></div>
           <ul>
             <li>
               <div><a href="#cliente-web">Cliente no Linguajar Web</a></div>
@@ -59,7 +193,7 @@
         </section>
 
         <section>
-          <div>O que são servers?</div>
+          <div class="title-option"><a href="#">O que são servers?</a></div>
           <ul>
             <li>
               <div><a href="#servidores">Sobre servidores</a></div>
@@ -77,7 +211,7 @@
         </section>
 
         <section>
-          <div>Linguagens de programação</div>
+          <div class="title-option"><a href="#">Linguagens de programação</a></div>
           <ul id="linguagens-list">
             <li>
               <div><a href="#definicao">Definição</a></div>
@@ -93,35 +227,33 @@
             </li>
           </ul>
         </section>
-      </section>
 
 
-      <section id="navbar-right">
-        <div class="title-navbar">Introdução ao HTML na Prática</div>
-        <ul class="visible">
-          <li>
-            <div><a href="#estrutura-html">Estrutura Básica do HTML</a></div>
-          </li>
-          <li>
-            <div><a href="#tag-html">Tags HTML</a></div>
-          </li>
-          <li>
-            <div><a href="#atributo-tag">Atributos das Tags</a></div>
-          </li>
-          <li>
-            <div><a href="#texto-html">Textos</a></div>
-          </li>
-          <li>
-            <div><a href="#listas-html">Listas Ordenadas e Não Ordenadas</a></div>
-          </li>
-          <li>
-            <div><a href="#links-html">Links</a></div>
-          </li>
-        </ul>
+        <section>
+          <ul>
+            <li>
+              <div><a href="#estrutura-html">Estrutura Básica do HTML</a></div>
+            </li>
+            <li>
+              <div><a href="#tag-html">Tags HTML</a></div>
+            </li>
+            <li>
+              <div><a href="#atributo-tag">Atributos das Tags</a></div>
+            </li>
+            <li>
+              <div><a href="#texto-html">Textos</a></div>
+            </li>
+            <li>
+              <div><a href="#listas-html">Listas Ordenadas e Não Ordenadas</a></div>
+            </li>
+            <li>
+              <div><a href="#links-html">Links</a></div>
+            </li>
+          </ul>
+        </section>
       </section>
     </section>
-  </header>
-  <script src="main.js"></script>
+  </main>
 </body>
 
 </html>
